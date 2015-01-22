@@ -2,6 +2,10 @@
 
 /* print Fahrenheit-Celsius table
 	for fahr = 0, 20, ..., 300 */
+
+float fahr_to_celsius (float);
+float celsius_to_fahr (float);
+
 main()
 {
 	float fahr, celsius, fahrenheit;
