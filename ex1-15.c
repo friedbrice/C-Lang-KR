@@ -2,7 +2,7 @@
 
 /* print Fahrenheit-Celsius table
 	for fahr = 0, 20, ..., 300 */
-main()`
+main()
 {
 	float fahr, celsius, fahrenheit;
 	float lower, upper, step;
@@ -16,8 +16,8 @@ main()`
 	
 	fahr = lower;
 	while (fahr <= upper) {
-		celsius = (5.0/9.0) * (fahr-32.0);
-		fahrenheit = (9.0/5.0) * celsius + 32;
+		celsius = fahr_to_celsius(fahr);
+		fahrenheit = celsius_to_fahr(celsius);
 		printf("%6.0f\t|%8.1f\t|%12.1f\n", fahr, celsius, fahrenheit);
 		fahr = fahr + step;
 	}
@@ -29,6 +29,6 @@ float fahr_to_celsius (float t) {
 	return (5.0/9.0) * (t - 32.0);
 }
 
-float celcius_to_fahr (float t) {
+float celsius_to_fahr (float t) {
 	return (9.0/5.0) * t + 32.0;
 }

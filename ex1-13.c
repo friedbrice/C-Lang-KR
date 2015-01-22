@@ -32,11 +32,11 @@ main() {
 	return 0;
 }
 
-void draw_histogram(int *a[], int l) {
+int draw_histogram(int a[], int l) {
 	/* takes an int array (and it's size), and prints a histogram */
-	int i, l = sizeof(*a) / sizeof(*a[0]);
+	int i;
 	
-	for d(i = 1; i < l; i++) {
+	for (i = 1; i < l; i++) {
 		if (a[i] != 0) {
 			printf("%d\t", i);
 			while (a[i] > 0) {
@@ -45,5 +45,6 @@ void draw_histogram(int *a[], int l) {
 			}
 		printf("\n");
 		}
+	return 0;
 	}
 }
