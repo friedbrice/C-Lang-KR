@@ -64,4 +64,3 @@ void reverse_line(char line[], int maxline) {
 	line = temp_line;
 	return;
 }
-
